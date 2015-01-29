@@ -1,0 +1,19 @@
+<h1>Your Matches!</h1>
+
+<% @users.each do |user| %>
+	<div class="match">
+		<div class="avatar">
+			<%= user.image %>
+		</div>
+		<div class="info">
+			<ul>
+				<li class="email"><%=user.email%></li>
+				<li class="gender"><%=user.gender%></li>
+				<li class="age"><%=user.age%></li>
+				<li class="activity-score"><%=user.activity_match_score%></li>
+				<li class="activity"><%=user.activity_type%></li>
+			</ul>
+
+		</div>
+	</div>
+<% end %>
